@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "8.6"
+}
+
+group = 'org.avito.internship.qa'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+
+// https://mvnrepository.com/artifact/com.microsoft.playwright/playwright
+    implementation group: 'com.microsoft.playwright', name: 'playwright', version: '1.20.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
