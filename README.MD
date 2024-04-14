@@ -8,7 +8,7 @@
 Склонируйте проект из репозитория или загрузите его архив.
 
 ```bash
-git clone PushkinaSecondAssignment
+git clone https://github.com/mediocritas/PushkinaSecondAssignment.git
 ```
 ## 3. Переход в директорию проекта
    Перейдите в директорию проекта с помощью команды cd.
@@ -18,11 +18,18 @@ cd ~/IdeaProjects/PushkinaSecondAssigment
 ```
 
 ## 4. Запуск тестов с помощью Gradle Wrapper
-Выполните следующую команду для запуска тестов:
+Выполните следующую команду для запуска тестов с помощью chromium:
 
 ```bash
 ./gradlew test
 ```
+
+Чтобы выбрать другой браузер для запуска и параметры окна браузера выполните
+
+```bash
+./gradlew test -Db<rowserType>=firefox -Dwidth=1920 -Dheight=1080
+```
+Доступные браузеры для выполнения: chromium, FireFox, Webkit
 
 ## 5. Просмотр результатов тестов
 Результаты тестов будут доступны в консоли после выполнения команды ./gradlew test. 
