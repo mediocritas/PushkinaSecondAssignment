@@ -35,6 +35,7 @@ public class EcoImpactResponseBody {
         String energy;
         String water;
         String pineYears;
+
     }
 
 }
